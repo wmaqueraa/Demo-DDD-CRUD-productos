@@ -37,7 +37,7 @@ public class ClienteUpdateRequest {
     private String telefono;
 
     @NotBlank(message = "El sexo es obligatorio")
-    @Pattern(regexp = "^[MF]$", message = "El sexo debe ser M o F")
+    @Pattern(regexp = "(?i)^(HOMBRE|MUJER)$", message = "El sexo debe ser MUJER o HOMBRE")
     private String sexo;
 
     @NotNull(message = "La fecha de nacimiento es obligatoria")
